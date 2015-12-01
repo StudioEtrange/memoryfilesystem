@@ -43,7 +43,7 @@ class MemoryFile extends MemoryEntry implements MemoryContents {
    */
   private static final int ARRAY_HEADER = 8 + 8 + 4;
 
-  static final int BLOCK_SIZE = 4096 - ARRAY_HEADER; //make sure it fits into a 4k memory region
+  static final int BLOCK_SIZE = 16384 - ARRAY_HEADER; //make sure it fits into a 16k memory region
 
   private final MemoryFileAttributesView basicFileAttributeView;
 
