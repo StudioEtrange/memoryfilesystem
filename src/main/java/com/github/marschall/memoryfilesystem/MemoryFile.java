@@ -558,7 +558,7 @@ class MemoryFile extends MemoryEntry implements MemoryContents {
 
     if (blocksRequired > BLOCK_SIZE) {
       // FIXME implement double indirect addressing
-      throw new AssertionError("files bigger than 16GB not yet supported");
+      throw new AssertionError("files bigger than" + BLOCK_SIZE*BLOCK_SIZE + " not yet supported");
     }
 
     if (blocksRequired > this.indirectBlocksAllocated) {
