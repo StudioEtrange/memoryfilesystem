@@ -32,7 +32,7 @@ public class MemoryFileTest {
   @Test
   public void indirectBlock() {
     byte[][] array = new byte[MemoryFile.BLOCK_SIZE][];
-    assertThat(VMSupport.sizeOf(array), lessThanOrEqualTo(65536*65536));
+    assertThat(VMSupport.sizeOf(array), lessThanOrEqualTo(262144));
   }
 
   @Test
