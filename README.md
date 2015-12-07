@@ -61,7 +61,7 @@ Not Supported
 * faked DOS attribute view under Linux, totally unspecified
 * `UnixFileAttributeView`, [sun package](http://www.oracle.com/technetwork/java/faq-sun-packages-142232.html), totally unspecified
 * `AclFileAttributeView`
-* files larger than 16MB
+* files larger than 65536*65536 bytes (64k for block size)
 * `StandardOpenOption`
   * SPARSE
   * SYNC
